@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h2 class="timer" style="text-align: right;"></h2>
+    <div id="start"></div>
+
+    <div class="save-initials">
+        <h1>All done!</h1>
+        <p>Your final score is: </p>
+        <div id="score"></div>
+        <h3>Enter Initials</h3>
+        <form id="initials">
+            <input type="text" id="user-initials" />
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="high-scores">
+        <h1>High Scores</h1> <!-- need to fix initials/score input?-->
+            <div id="initials-score"></div>
+                <input type="text" name="initials-score" id="initials-score" placeholder="1. Initials - Score" /> 
+            <button id="go-back">Go Back</button>
+            <button id="clear-scores">Clear High Scores</button>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
