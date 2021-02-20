@@ -25,6 +25,7 @@ function sendMessage() {
 
 setTimer();
 
+
 //question appears - multiple choice, 4 answers
 //after question is answered, another question appears 4x, "Correct!" or "Wrong!" appears
 //if question is answered incorrectly, time is subtracted from clock
@@ -52,6 +53,8 @@ submitBtn.addEventListener("click", function(event) {
 
     var initials = document.querySelector("#user-initials");
     var highScore = document.querySelector("#score");
+
+
 
         localStorage.setItem("user-initials", initials);
         localStorage.setItem("score", highScore);
