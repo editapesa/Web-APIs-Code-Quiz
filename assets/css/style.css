@@ -1,3 +1,49 @@
-body {
+:root {
+    background-color: bisque;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 5;
+    padding: 5;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 2rem;
+    display: flex;
+    width: 800px;
+    height: 100vh;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center; 
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    background-color: peru;
+    border-radius: 4px;
+    color:white;
+    border: none;
+    padding: 10px 24px;
+    width: 10rem;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.btn:hover {
+    background-color: rosybrown;
 }

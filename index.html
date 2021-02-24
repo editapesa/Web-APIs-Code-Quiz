@@ -7,44 +7,44 @@
     <title>Code Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <h2 class="timer" style="text-align: right;"></h2>
-    <div id="start"></div>
-
-    <main>
-        <div class="start-container">
+<body> 
+    
+    <div class="timer"></div> 
+  
+    <div class="container">
+        <div id="start-page" class="flex-column flex center">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit. Any incorrect answers will deduct ten seconds from your score time.</p>
-            <button id="start-quiz">Start Quiz</button>
+            <button id="start-btn" class="start-btn btn">Start Quiz</button>
+            <!-- <button id="high-scores-btn" class="high-scores-btn btn">View High Scores</button> -->
         </div>
+    
+        <!-- -->
 
-        <div class="question-container">
-            <button id="answer-button">Answer 1</button>
-            <button id="answer-button">Answer 2</button>
-            <button id="answer-button">Answer 3</button>
-            <button id="answer-button">Answer 4</button>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid"></div>
         </div>
-    </main>
-
-    <div class="save-initials">
-        <h1>All done!</h1>
-        <p>Your final score is: </p>
-        <div id="score"></div>
-        <h3>Enter Initials</h3>
-        <form id="initials">
-            <input type="text" id="user-initials" />
-            <button id="submit">Submit</button>
-        </form>
+   
+        <div id="game-end" class="hide">
+            <h1>All done!</h1>
+            <p>Your final score is: </p>
+            <div id="score"></div>
+            <p>Enter Initials:
+                <input type="text" id="user-initials" />
+                <button id="submit-btn" class="submit-btn btn">Submit</button>
+            </p>
+        </div>
+   
+        <div id="high-scores" class="hide">
+            <h1>High Scores</h1> <!-- need to fix this?-->
+                <ol id="initials-score-display"></ol>
+                    <!-- <input type="text" name="initials-score" id="initials-score" placeholder="1. Initials - Score" /> -->
+                <button id="go-back-btn" class="go-back-btn btn">Go Back</button>
+                <button id="clear-scores-btn" class="clear-scores-btn btn">Clear High Scores</button>
+        </div>
     </div>
-
-    <div class="high-scores">
-        <h1>High Scores</h1> <!-- need to fix initials/score input?-->
-            <div id="initials-score"></div>
-                <input type="text" name="initials-score" id="initials-score" placeholder="1. Initials - Score" /> 
-            <button id="go-back">Go Back</button>
-            <button id="clear-scores">Clear High Scores</button>
-    </div>
-
+   
     <script src="assets/js/script.js"></script>
 </body>
 </html>
