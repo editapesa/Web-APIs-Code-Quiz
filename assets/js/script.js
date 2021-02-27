@@ -14,6 +14,9 @@ var initialsEl = document.getElementById("user-initials");
 var submitBtn = document.getElementById("submit");
 
 //Start quiz, hide pg
+
+startButton.onclick = startGame;
+
 function startGame() {
     var startPageEl = document.getElementById('start-page');
     startPageEl.setAttribute('class', 'hide');
@@ -36,7 +39,7 @@ function showQuestion() {
         answerChoice.setAttribute('class', 'choice');
         answerChoice.setAttribute('value', choice);
 
-        answerChoice.textContent = i + 1 + '. ' + choice;
+        answerChoice.textContent = choice;
 
         answerChoice.onclick = selectAnswer;
         answerButtonsEl.appendChild(answerChoice);

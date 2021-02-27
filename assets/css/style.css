@@ -9,14 +9,16 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.container {
-    padding: 2rem;
+#question-header {
     display: flex;
-    width: 800px;
-    height: 100vh;
-    max-width: 80%;
     justify-content: center;
     align-items: center; 
+}
+
+#answer-buttons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .start-page {
@@ -43,4 +45,10 @@
 
 .btn:hover {
     background-color: rosybrown;
+}
+
+#right-wrong {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
