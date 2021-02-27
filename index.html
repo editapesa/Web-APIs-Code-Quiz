@@ -9,21 +9,22 @@
 </head>
 <body> 
     
-    <div class="timer"></div> 
+    <div class="timer">Time: <span id="time">0</span></div> 
+
+    <div class="high-scores"><a href="highscores.html">View High Scores</a></div>
   
-    <div class="container">
-        <div id="start-page" class="flex-column flex center">
+    <div class="wrapper">
+        <div id="start-page" class="start-page">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit. Any incorrect answers will deduct ten seconds from your score time.</p>
             <button id="start-btn" class="start-btn btn">Start Quiz</button>
-            <!-- <button id="high-scores-btn" class="high-scores-btn btn">View High Scores</button> -->
         </div>
     
         <!-- -->
 
         <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn-grid"></div>
+            <div id="question-header">Question</div>
+            <div id="answer-buttons" class="answer-buttons"></div>
         </div>
    
         <div id="game-end" class="hide">
@@ -35,14 +36,8 @@
                 <button id="submit-btn" class="submit-btn btn">Submit</button>
             </p>
         </div>
-   
-        <div id="high-scores" class="hide">
-            <h1>High Scores</h1> <!-- need to fix this?-->
-                <ol id="initials-score-display"></ol>
-                    <!-- <input type="text" name="initials-score" id="initials-score" placeholder="1. Initials - Score" /> -->
-                <button id="go-back-btn" class="go-back-btn btn">Go Back</button>
-                <button id="clear-scores-btn" class="clear-scores-btn btn">Clear High Scores</button>
-        </div>
+
+        <div id ="right-wrong" class="right-wrong hide"></div>
     </div>
    
     <script src="assets/js/script.js"></script>
