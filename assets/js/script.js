@@ -13,8 +13,6 @@ var currentQuestionIndex = 0;
 var initialsEl = document.getElementById("user-initials");
 var submitBtn = document.getElementById("submit");
 
-startButton.onclick = startGame;
-
 //Start quiz, hide pg
 function startGame() {
     var startPageEl = document.getElementById('start-page');
@@ -143,20 +141,24 @@ function saveHighScores() {
         };
 
         //save to local storage
+        highscores.push(newScore);
+        window.localStorage.setItem('highscores', JSON.stringify(highscores));
+
+        window.location.href = "highscores.html";
     }
 }
 
-submitBtn.addEventListener("click", function(event) {
-    event.preventDefault();
+function checkForEnter(event) {
+    if (event.key === "Enter") {
+        saveHighScores();
+    }
+}
 
-    var initials = document.querySelector("#user-initials");
-    var highScore = document.querySelector("#score");
+submitBtn.onclick = saveHighScores;
+
+startButton.onclick = startGame;
+
+initialsEl.onkeyup = checkForEnter;
 
 
 
-        localStorage.setItem("user-initials", initials);
-        localStorage.setItem("score", highScore);
-        renderHighScores()
-}); 
-
-//choose "go back" or "clear high scores" buttons
