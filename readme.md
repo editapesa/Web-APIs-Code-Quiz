@@ -8,6 +8,6 @@ Coding assessments with multiple-choice and/or interactive coding challenges are
 - When all the questions are answered, or if the timer goes down to zero, the game is over.
 - At the end of the game, the user can save their initials and score.
 
-The application can be viewed here: [Code Quiz](https://www.example.com)
+The application can be viewed here: [Code Quiz](https://editapesa.github.io/Web-APIs-Code-Quiz/)
 
-![screenshot](image.jpg)
+![screenshot](./assets/images/coding-quiz-demo/)
